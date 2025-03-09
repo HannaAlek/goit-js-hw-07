@@ -9,8 +9,8 @@ const btnDestroy=document.querySelector('button[data-destroy]');
 const boxes=document.querySelector('#boxes');
 const input=document.querySelector('input');
 
-function createBoxes(){
-  const amount=Number(input.value);
+function createBoxes(amount){
+  amount=Number(input.value);
   if(amount<1 || amount>100){return}
 
 const square=document.createDocumentFragment();
